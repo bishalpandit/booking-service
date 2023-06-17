@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "type": "module",
+  "name": "booking-service",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0"
+  }
+}
