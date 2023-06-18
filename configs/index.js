@@ -24,3 +24,4 @@ export const connectDB = async () => {
 };
 
 export const PORT = process.env.PORT || 5000;
+export const MAIL_KEY = process.env.MAIL_KEY;

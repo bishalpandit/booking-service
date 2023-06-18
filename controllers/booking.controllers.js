@@ -1,4 +1,5 @@
 import { db } from "../configs/index.js";
+import { sendEmail } from "../service/sendEmail.js";
 
 export const getSeats = async (req, res) => {
     try {
@@ -110,6 +111,8 @@ export const createBooking = async (req, res) => {
                 where id = ${seatId}
             `)
         }
+
+        sendEmail(email, {bookingId, totalPrice, name, email, phone});
 
         res.status(200).json({
             data: {
